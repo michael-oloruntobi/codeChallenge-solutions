@@ -26,3 +26,10 @@ class MyRegex {
         pattern = digit + dot + digit + dot + digit + dot + digit;
     }
 }
+
+
+The regular expression (25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?) matches:
+
+25[0-5]: numbers between 250 and 255
+2[0-4][0-9]: numbers between 200 and 249
+[01]?[0-9][0-9]?: numbers between 0 and 199, with optional leading zero(s)
